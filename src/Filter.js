@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Filterchildren from './Filterchildren'
 
 const Filter = () => {
-    const [items, setItems]= useState(['bananas', 'soap', 'water'])
+    const [items, setItems]= useState([])
     const [input, setInput]= useState('')
     const hundleinputvalue=(e)=>{
         setInput(e.target.value)
@@ -14,7 +14,7 @@ const Filter = () => {
         setItems([...items, input])
     }
   return (
-<Filterchildren items={items} hundleinputvalue={hundleinputvalue} additem={additem} removeItems={removeItems}/>
+<Filterchildren items={items} input={input} hundleinputvalue={hundleinputvalue} additem={additem} removeItems={removeItems}/>
   )
 }
 
