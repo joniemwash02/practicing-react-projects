@@ -1,12 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
-import { Accordian } from './components/accordian/Index';
+// import Header from './Header';
+// // import Itemsaray from './Itemsaray';
+// import Persons from './Persons';
+// // import { Accordian } from './components/accordian/Index';
+import Filter from './Filter'
 
 
 function App() {
   return (
     <div className="App">
-      <Accordian />
+      {/* <Header /> */}
+     {/* <Persons /> */}
+     {/* <Itemsaray /> */}
+     <Filter />
     </div>
   );
 }
